@@ -7,6 +7,12 @@ north();
 
 //2level
 map();
+hint();
+hint();
+//command test
+isFree('east');
+
+while (east() ==true) { east(); }
 
 //3level
 
