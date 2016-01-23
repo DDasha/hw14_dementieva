@@ -32,5 +32,22 @@ map();
 
 
 //4level
+map();
+hint();
+
+if (isFree('south')==true) {
+	south();
+} 
+else {
+	east();
+}
+
+var i = 0;
+for (i = 0; i < 10; i++) {
+    if (isFree('east')==true)
+        east();
+    else
+        south();
+}
 
 //5level
