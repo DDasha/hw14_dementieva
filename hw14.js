@@ -35,13 +35,6 @@ map();
 map();
 hint();
 
-if (isFree('south')==true) {
-	south();
-} 
-else {
-	east();
-}
-
 var i = 0;
 for (i = 0; i < 10; i++) {
     if (isFree('east')==true)
@@ -51,3 +44,31 @@ for (i = 0; i < 10; i++) {
 }
 
 //5level
+map();
+hint();
+
+var i = 0;
+for(i=0; i<10; i++){
+	if (isFree('east')==true) 
+		east();
+	else
+		south();
+}
+for (i=0; i<6; i++){
+	if (isFree('west')==true)
+		west();
+	else
+		south();
+}
+for (i=0; i<10; i++){
+	if (isFree('west')==true)
+		west();
+	else
+		north();
+}
+for (i=0; i<10; i++){
+	if (isFree('south')==true)
+		south();
+	else
+		east();
+}
